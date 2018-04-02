@@ -30,6 +30,7 @@ disqus_shortname: SublimeCodeIntel
 
 theme_color_light: "#ffd34e"
 theme_color_dark: "#ff9800"
+theme_color_quickstart: "#995b00"
 
 logo: "/img/logo-2x.png"
 logo_width: 400
