@@ -70,4 +70,4 @@ maintaining it is hard and time consuming, if you like SublimeCodeIntel, please
 donate whatever you feel comfortable with via PayPal. The donations will be
 directly used to support SublimeCodeIntel's developers.
 
-<a class="paypalme" href="https://www.paypal.me/Kronuz/20" target="_blank" rel="nofollow">Donate to Kronuz via PayPal</a>
+<a class="paypalme" href="https://www.paypal.me/Kronuz/25" target="_blank" rel="nofollow">Donate to Kronuz via PayPal</a>
