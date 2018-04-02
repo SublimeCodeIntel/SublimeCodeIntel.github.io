@@ -6,9 +6,10 @@ redirect_from: /docs/
 
 ## What is {{ site.name }}?
 
-*Code intelligence plugin ported from Open Komodo Editor to Sublime Text.*
+*A full-featured code intelligence and smart autocomplete engine for Sublime Text.*
 
-Supports all the languages Komodo Editor supports for Code Intelligence (CIX,
+Code intelligence was ported from Open Komodo Editor to Sublime Text and
+supports all the languages Komodo Editor supports for Code Intelligence (CIX,
 CodeIntel2):
 
 *JavaScript, ES6, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python, XML,
