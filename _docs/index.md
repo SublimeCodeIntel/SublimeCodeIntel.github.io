@@ -24,14 +24,14 @@ TemplateToolkit, PHP.*
 
 
 ---
-## Donate to SublimeCodeIntel!
+## Donate to {{ site.name }}!
 
 ### How will my donation be used?
 
-Development of *SublimeCodeIntel* is done as an open-source project and
-maintaining it is hard and time consuming, if you like SublimeCodeIntel, please
+Development of *{{ site.name }}* is done as an open-source project and
+maintaining it is hard and time consuming, if you like {{ site.name }}, please
 donate whatever you feel comfortable with via PayPal. The donations will be
-directly used to support SublimeCodeIntel's developers.
+directly used to support {{ site.name }}'s developers.
 
 ### How do I donate?
 
