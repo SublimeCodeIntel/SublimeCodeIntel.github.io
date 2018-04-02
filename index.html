@@ -1,172 +1,61 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-	<meta charset='utf-8' />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-	<meta name="description" content="SublimeCodeIntel : Full-featured code intelligence and smart autocomplete engine" />
+<section class="intro">
+	<div class="grid">
 
-	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css?_=3">
-
-	<title>SublimeCodeIntel</title>
-
-	<script type="text/javascript">
-		if (/Mac OS X/.test(navigator.userAgent)) document.documentElement.className += ' plat_osx';
-		else if (/Linux|FreeBSD/.test(navigator.userAgent)) document.documentElement.className += ' plat_linux';
-		else document.documentElement.className += ' plat_win';
-		if (/WOW64|Win64|x86_64/.test(navigator.userAgent)) document.documentElement.className += ' arch_64';
-		else document.documentElement.className += ' arch_32';
-	</script>
-</head>
-
-<body>
-	<!-- HEADER -->
-	<div id="header_wrap" class="outer">
-		<header class="inner">
-		  <a id="forkme_banner" href="https://github.com/SublimeCodeIntel/SublimeCodeIntel">View on GitHub</a>
-
-		  <h1 id="project_title"><a href="/SublimeCodeIntel/"><span class="sublime">Sublime</span><span class="codeintel">CodeIntel</span></a></h1>
-		  <h2 id="project_tagline">A full-featured code intelligence and smart autocomplete engine for Sublime Text.<br><span class="title">JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.</span></h2>
-
-			<section id="downloads">
-				<a class="zip_download_link" href="https://github.com/SublimeCodeIntel/SublimeCodeIntel/archive/master.zip">Download this project as a .zip file</a>
-				<a class="tar_download_link" href="https://github.com/SublimeCodeIntel/SublimeCodeIntel/tarball/master">Download this project as a tar.gz file</a>
-			</section>
-		</header>
-	</div>
-
-	<div class="band">
-		<div id="anim_shell">
-		<div id="anim_top"></div>
-		<div id="anim_container">
-			<div id="anim_left" style="float:left"></div>
-			<div id="anim_right" style="float:right"></div>
-			<canvas id="target" width="800" height="450">
-				<div id="fallback" style="width: 800px; height: 450px; position: relative;"></div>
-			</canvas>
-			<div id="anim_overlay"></div>
+		<div class="unit whole center-on-mobiles">
+			<p class="first">Sublime Code Intelligence</p>
 		</div>
-		<div id="anim_bottom"></div>
+
+	</div>
+</section>
+
+<section class="standalone">
+	<div class="grid">
+
+		<p class="unit whole">
+			<strong>A full-featured code intelligence and smart autocomplete engine for Sublime Text.</strong>
+
+			<br />
+
+			<em>JavaScript, ES6, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python, XML,
+			XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl,
+			TemplateToolkit, PHP.</em>
+		</p>
+
+		<div class="clear"></div>
+
+	</div>
+</section>
+
+<section class="quickstart">
+	<div class="grid">
+		<div class="unit golden-small center-on-mobiles">
+			<h3>Get up and running <em>in&nbsp;seconds</em>:</h3>
+			<ol>
+				<li><a href="{{ 'docs/installation/#1-install-codeintel' | relative_url }}">Install <strong>CodeIntel</strong></a></li>
+				<li><a href="{{ 'docs/installation/#2-install-sublimecodeintel' | relative_url }}">Install <strong>SublimeCodeIntel</strong></a></li>
+				<li><a href="{{ 'docs/installation/#3-donate' | relative_url }}"><strong><em>Share some love</em></strong></a></li>
+				<li><strong>Enjoy!</strong></li>
+			</ol>
 		</div>
-		<div class="anim_caption">
-			<div class="controls">
-				<a href="javascript:prev()" class="skip">◀</a> &nbsp; <span id="content_index">1 / 3</span> &nbsp; <a href="javascript:next()" class="skip">▶</a>
-			</div>
-
-			<div id="content">
-				<div id="content1">Autocomplete code!</div>
-				<div id="content2" style="display: none;">Jump to symbol definition!</div>
-				<div id="content3" style="display: none;">Make your life easier with code intelligence!</div>
-			</div>
+		<div class="unit golden-large">
+			<div class="language-sh highlighter">
+			<style>
+				.anim_target { width: 100% !important; height: auto !important; }
+				.quickstart .highlighter:before { content: ""; }
+			</style>
+			<div id="anim_fallback" class="anim_target"><canvas id="anim_target" class="anim_target"></canvas></div>
+			<script src="{{ 'js/anim.js' | relative_url }}"></script>
+			<script>
+				var animation = "{{ 'assets/cap_packed.png' | relative_url }}";
+				var timeline = [{"delay": 1, "blit": [[0, 0, 917, 493, 0, 0]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": []}, {"delay": 1, "blit": []}, {"delay": 1, "blit": []}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[0, 493, 625, 493, 0, 0], [689, 709, 187, 14, 626, 48], [903, 565, 2, 1, 915, 492]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[916, 624, 1, 14, 64, 48]]}, {"delay": 1, "blit": [[916, 564, 1, 2, 813, 36], [876, 709, 8, 14, 64, 48], [31, 478, 7, 10, 90, 478]]}, {"delay": 1, "blit": [[916, 562, 1, 2, 814, 36], [885, 709, 8, 14, 71, 48], [650, 829, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[813, 38, 4, 2, 813, 36], [888, 572, 28, 14, 65, 48], [892, 812, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[911, 518, 1, 2, 817, 36], [908, 786, 9, 15, 92, 48], [910, 801, 7, 11, 90, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[911, 684, 3, 2, 817, 36], [456, 1168, 329, 182, 92, 48], [906, 812, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[915, 614, 1, 14, 106, 48]]}, {"delay": 1, "blit": [[914, 682, 3, 2, 819, 36], [300, 2704, 304, 33, 106, 48], [22, 1638, 152, 12, 121, 85], [22, 1657, 194, 12, 121, 104], [22, 1676, 145, 12, 121, 123], [22, 1695, 180, 12, 121, 142], [0, 2505, 319, 69, 100, 161], [903, 801, 7, 11, 90, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[910, 568, 4, 2, 821, 36], [313, 2234, 321, 145, 100, 48], [898, 775, 14, 11, 90, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[916, 610, 1, 14, 141, 48]]}, {"delay": 1, "blit": [[915, 600, 1, 14, 141, 48]]}, {"delay": 1, "blit": [[806, 811, 86, 16, 64, 48], [625, 841, 257, 12, 6, 478]]}, {"delay": 1, "blit": [[903, 566, 14, 2, 813, 36], [0, 1419, 321, 182, 142, 48], [909, 747, 8, 10, 256, 478]]}, {"delay": 1, "blit": [[888, 690, 2, 2, 826, 36], [0, 2702, 300, 34, 152, 48], [689, 775, 68, 29, 163, 85], [300, 1476, 10, 6, 442, 103], [792, 735, 61, 10, 233, 104], [728, 877, 117, 10, 163, 123], [764, 747, 131, 12, 163, 142], [764, 735, 138, 12, 163, 161], [689, 811, 117, 12, 163, 180], [0, 2574, 300, 19, 152, 195], [909, 672, 8, 10, 256, 479]]}, {"delay": 1, "blit": [[916, 596, 1, 14, 162, 48]]}, {"delay": 1, "blit": [[915, 586, 1, 14, 162, 48], [908, 618, 7, 38, 443, 68]]}, {"delay": 1, "blit": [[914, 586, 1, 14, 162, 48], [895, 521, 10, 40, 442, 67], [911, 493, 6, 11, 152, 478]]}, {"delay": 1, "blit": [[911, 682, 3, 2, 827, 36], [456, 986, 346, 182, 143, 48], [899, 813, 7, 10, 257, 479]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[903, 563, 2, 2, 829, 36], [0, 2652, 319, 50, 170, 48], [896, 801, 7, 11, 257, 478], [899, 813, 7, 10, 152, 479]]}, {"delay": 1, "blit": [[904, 654, 3, 2, 829, 36], [878, 666, 23, 16, 176, 48], [764, 853, 7, 11, 257, 478]]}, {"delay": 1, "blit": [[901, 654, 3, 2, 831, 36], [878, 650, 23, 16, 190, 48], [895, 747, 14, 11, 250, 478]]}, {"delay": 1, "blit": [[904, 652, 3, 2, 833, 36], [878, 634, 23, 16, 204, 48], [909, 736, 7, 11, 257, 478]]}, {"delay": 1, "blit": [[901, 650, 7, 2, 830, 36], [862, 759, 50, 16, 184, 48], [888, 791, 8, 11, 256, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[903, 563, 2, 2, 836, 36], [901, 865, 16, 16, 225, 48], [885, 725, 8, 10, 256, 479]]}, {"delay": 1, "blit": [[901, 652, 3, 2, 836, 36], [0, 1783, 320, 182, 225, 48], [0, 2365, 7, 11, 257, 478]]}, {"delay": 1, "blit": [[878, 493, 10, 109, 526, 63]]}, {"delay": 1, "blit": [[915, 648, 2, 2, 838, 36], [895, 493, 16, 28, 239, 48], [689, 763, 173, 12, 240, 85], [806, 735, 54, 10, 366, 104], [689, 735, 75, 28, 289, 107], [15, 1820, 49, 12, 240, 123], [141, 1839, 54, 10, 366, 123], [905, 521, 7, 45, 275, 145], [898, 786, 10, 15, 526, 168], [905, 521, 7, 7, 310, 202], [899, 812, 7, 11, 257, 478]]}, {"delay": 1, "blit": [[913, 586, 1, 14, 246, 48]]}, {"delay": 1, "blit": [[903, 570, 7, 2, 839, 36], [320, 1714, 320, 182, 225, 48], [902, 736, 14, 11, 250, 478]]}, {"delay": 1, "blit": [[912, 586, 1, 14, 288, 48]]}, {"delay": 1, "blit": [[625, 595, 253, 102, 626, 38], [0, 2593, 623, 30, 2, 48], [85, 2085, 139, 12, 149, 78], [163, 78, 210, 12, 163, 92], [65, 92, 455, 68, 65, 106], [275, 92, 98, 12, 275, 106], [813, 140, 104, 14, 813, 142], [813, 156, 81, 82, 813, 158], [185, 162, 243, 26, 185, 176], [65, 148, 97, 12, 65, 204], [163, 190, 133, 12, 163, 204], [689, 697, 223, 12, 65, 218], [290, 204, 181, 26, 290, 218], [813, 240, 104, 42, 813, 242], [65, 232, 406, 12, 65, 246], [440, 2761, 370, 12, 65, 260], [100, 260, 335, 12, 100, 274], [813, 284, 104, 187, 813, 286], [65, 767, 133, 12, 65, 288], [205, 274, 195, 12, 205, 288], [0, 2773, 343, 12, 65, 302], [65, 302, 343, 12, 65, 316], [65, 316, 426, 96, 65, 330], [65, 414, 315, 12, 65, 428], [845, 881, 68, 10, 65, 442], [689, 723, 196, 12, 135, 442], [67, 442, 452, 17, 67, 456], [625, 829, 257, 12, 6, 478]]}, {"delay": 1, "blit": [[911, 586, 1, 14, 64, 62]]}, {"delay": 1, "blit": [[915, 646, 2, 2, 813, 38], [881, 775, 17, 16, 64, 62], [31, 478, 7, 10, 90, 478]]}, {"delay": 1, "blit": [[915, 644, 2, 2, 814, 38], [885, 709, 17, 16, 71, 62], [650, 829, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[903, 566, 5, 2, 813, 38], [878, 602, 37, 16, 65, 62], [892, 812, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[903, 563, 2, 2, 817, 38], [328, 1350, 322, 182, 92, 62], [910, 801, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[912, 564, 4, 2, 817, 38], [516, 2069, 311, 165, 92, 62], [35, 2365, 7, 11, 90, 478]]}, {"delay": 1, "blit": [[915, 642, 2, 2, 820, 38], [0, 1601, 320, 182, 92, 62], [903, 801, 7, 11, 90, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[916, 582, 1, 14, 120, 62]]}, {"delay": 1, "blit": [[916, 568, 1, 14, 120, 62]]}, {"delay": 1, "blit": [[878, 688, 33, 4, 813, 36], [625, 897, 231, 2, 65, 48], [911, 504, 2, 14, 64, 50], [0, 2176, 313, 156, 66, 50], [625, 697, 64, 132, 392, 73], [827, 735, 26, 10, 324, 118], [625, 853, 251, 12, 6, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[915, 640, 2, 2, 824, 38], [0, 1237, 328, 182, 135, 62], [757, 799, 118, 12, 145, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[915, 638, 2, 2, 825, 38], [0, 1965, 304, 104, 148, 62], [757, 787, 124, 12, 156, 175], [728, 887, 103, 10, 156, 194], [625, 877, 103, 12, 156, 213], [909, 736, 6, 11, 152, 478], [909, 747, 8, 11, 256, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[916, 546, 1, 14, 155, 62], [888, 493, 7, 79, 443, 78], [895, 561, 8, 11, 151, 478]]}, {"delay": 1, "blit": [[914, 568, 2, 2, 826, 38], [321, 1532, 320, 182, 143, 62], [909, 672, 8, 10, 256, 479]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[915, 546, 1, 14, 162, 62], [901, 672, 8, 10, 151, 479]]}, {"delay": 1, "blit": [[903, 563, 2, 2, 827, 38], [901, 865, 16, 16, 162, 62], [0, 2365, 7, 11, 257, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[881, 791, 7, 16, 163, 62], [0, 2365, 296, 12, 152, 478]]}, {"delay": 1, "blit": [[878, 692, 16, 2, 813, 38], [320, 2486, 322, 107, 162, 62]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[914, 546, 1, 14, 169, 62]]}, {"delay": 1, "blit": [[911, 600, 3, 2, 828, 38], [319, 2652, 304, 52, 169, 62], [404, 2692, 14, 7, 275, 121], [404, 2692, 14, 7, 233, 140], [896, 801, 7, 11, 441, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[913, 546, 1, 14, 183, 62]]}, {"delay": 1, "blit": [[912, 560, 5, 2, 830, 38], [320, 2379, 322, 107, 162, 62], [902, 725, 14, 11, 434, 478]]}, {"delay": 1, "blit": [[908, 568, 2, 2, 834, 38], [901, 865, 16, 16, 211, 62], [909, 736, 6, 11, 441, 478]]}, {"delay": 1, "blit": [[912, 562, 4, 2, 834, 38], [878, 618, 30, 16, 211, 62], [911, 493, 6, 11, 441, 478]]}, {"delay": 1, "blit": [[913, 570, 3, 2, 837, 38], [888, 586, 23, 16, 232, 62], [899, 813, 7, 10, 441, 479]]}, {"delay": 1, "blit": [[903, 561, 2, 2, 839, 38], [885, 634, 16, 16, 246, 62], [896, 801, 7, 11, 441, 478]]}, {"delay": 1, "blit": [[903, 568, 7, 2, 836, 38], [860, 865, 57, 16, 219, 62], [139, 2737, 14, 11, 434, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[915, 532, 1, 14, 267, 62]]}, {"delay": 1, "blit": [[912, 546, 1, 14, 267, 62]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[901, 634, 7, 16, 261, 62], [0, 2749, 776, 12, 6, 478], [723, 478, 78, 12, 826, 478]]}, {"delay": 1, "blit": [[916, 532, 1, 14, 267, 62]]}, {"delay": 1, "blit": [[915, 532, 1, 14, 267, 62]]}, {"delay": 1, "blit": [[901, 634, 1, 14, 267, 62]]}, {"delay": 1, "blit": [[320, 1896, 320, 173, 260, 71], [0, 2737, 776, 12, 6, 478], [826, 478, 78, 12, 826, 478]]}, {"delay": 1, "blit": [[914, 532, 1, 14, 267, 62]]}, {"delay": 1, "blit": [[913, 532, 1, 14, 267, 62]]}, {"delay": 1, "blit": [[910, 570, 3, 2, 841, 38], [0, 2332, 311, 33, 260, 62], [757, 775, 124, 12, 275, 99], [0, 2379, 320, 126, 260, 118], [902, 747, 7, 11, 441, 478]]}, {"delay": 1, "blit": [[912, 532, 1, 14, 274, 62]]}, {"delay": 1, "blit": [[916, 518, 1, 14, 274, 62]]}, {"delay": 1, "blit": [[878, 682, 33, 6, 813, 38], [0, 2069, 516, 107, 64, 62], [0, 2761, 440, 12, 8, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[901, 656, 14, 16, 268, 62]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[915, 518, 1, 14, 274, 62]]}, {"delay": 1, "blit": [[625, 493, 253, 102, 626, 40], [0, 2623, 623, 29, 2, 62], [0, 986, 456, 251, 64, 91], [325, 81, 62, 36, 325, 109], [387, 106, 132, 24, 387, 134], [813, 140, 104, 14, 813, 144], [813, 156, 81, 82, 813, 160], [813, 240, 104, 42, 813, 244], [813, 284, 104, 185, 813, 288], [65, 316, 426, 96, 65, 344], [65, 414, 315, 12, 65, 442], [65, 428, 452, 17, 65, 456], [625, 865, 235, 12, 6, 478]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[902, 709, 10, 16, 64, 75]]}, {"delay": 1, "blit": [[914, 518, 1, 14, 64, 76]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[913, 518, 1, 14, 64, 76]]}, {"delay": 1, "blit": [[912, 518, 1, 14, 64, 76]]}, {"delay": 1, "blit": [[916, 504, 1, 14, 64, 76]]}, {"delay": 1, "blit": [[915, 504, 1, 14, 64, 76]]}, {"delay": 1, "blit": []}, {"delay": 1, "blit": [[914, 504, 1, 14, 64, 76]]}, {"delay": 55, "blit": [[913, 504, 1, 14, 64, 76]]}];
+				set_animation(animation, timeline, 'anim_target', 'anim_fallback');
+			</script>
 		</div>
+		<div class="clear"></div>
 	</div>
+</section>
 
-	<!-- MAIN CONTENT -->
-	<div id="main_content_wrap" class="outer">
-	  <section id="main_content" class="inner">
-
-<!-- content begins -->
-<p>Code intelligence plugin ported from <a href="http://www.openkomodo.com/" target="_blank">Open Komodo Editor</a> to <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a>.</p>
-
-<p>Supports all the languages Komodo Editor supports for Code Intelligence (CIX, CodeIntel2):</p>
-
-<pre><code>JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.
-</code></pre>
-
-<p>Provides the following features:</p>
-
-<ul>
-<li>Jump to Symbol Definition - Jump to the file and line of the definition of a symbol.</li>
-<li>Imports autocomplete - Shows autocomplete with the available modules/symbols in real time.</li>
-<li>Function Call tooltips - Displays information in the status bar about the working function.</li>
-</ul>
-
-<p>Plugin should work in all three platforms (MacOS X, Windows and Linux).</p>
-
-
-<h2>How do I donate?</h2>
-<p>We accept donations via PayPal:</p>
-
-<div style="text-align: center;">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="VVX4Q9H3924LE">
-	<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online." style="vertical-align: bottom;">
-	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</div>
-
-
-<h2>Installing</h2>
-
-<p><strong>With the Package Control plugin:</strong> The easiest way to install SublimeCodeIntel is through Package Control, which can be found at this site: <a href="http://wbond.net/sublime_packages/package_control">http://wbond.net/sublime_packages/package_control</a></p>
-
-<p>Once you install Package Control, restart ST2 and bring up the Command Palette (<code>Command+Shift+P</code> on OS X, <code>Control+Shift+P</code> on Linux/Windows). Select "Package Control: Install Package", wait while Package Control fetches the latest package list, then select SublimeCodeIntel when the list appears. The advantage of using this method is that Package Control will automatically keep SublimeCodeIntel up to date with the latest version.</p>
-
-<p><strong>Without Git:</strong> Download the latest source from <a href="http://github.com/SublimeCodeIntel/SublimeCodeIntel" target="_blank">GitHub</a> and copy the whole directory into the Packages directory.</p>
-
-<p><strong>With Git:</strong> Clone the repository in your Sublime Text Packages directory, located somewhere in user's "Home" directory:</p>
-
-<pre><code>git clone git://github.com/SublimeCodeIntel/SublimeCodeIntel.git
-</code></pre>
-
-<p>The "Packages" packages directory is located differently in different platforms. To access the directory use:</p>
-
-<ul>
-<li>
-<p>OS X:</p>
-
-<p>Sublime Text -> Preferences -> Browse Packages...</p>
-</li>
-<li>
-<p>Linux:</p>
-
-<p>Preferences -> Browse Packages...</p>
-</li>
-<li>
-<p>Windows:</p>
-
-<p>Preferences -> Browse Packages...</p>
-</li>
-</ul><h2>Using</h2>
-
-<ul>
-<li>Sublime CodeIntel will allow you to jump around symbol definitions even across files with just a click. To "Jump to Symbol Declaration" use <code>Control+Command+Alt+Up</code> (or <code>Alt+Click</code> on Windows, <code>Command+Click</code> on Linux or <code>Control+Click</code> on Mac OS X) over the symbol, and <code>Control+Command+alt+Left</code> for going back.</li>
-<li>Start typing code as usual, autocomplete will pop up whenever it's available. To trigger manual codeintel autocompletion use <code>Shift+Control+Space</code> (<code>Shift+Command+Space</code> on Mac OS X).</li>
-</ul>
-<p>Don't despair! The first time you use it it needs to build some indexes and it can take more than a few seconds (around six in my configuration).</p>
-
-<p>It just works!</p>
-
-<h2>Troubleshooting</h2>
-<ul>
-<li>Check the <code>~/.codeintel/codeintel.log</code> file to see if there are any errors in it or in the Sublime Text console.</li>
-
-<li>Delete the directory with the CodeIntel database <code>~/.codeintel/db</code> and restart Sublime Text.</li>
-
-<li>Building process is no longer distributed with this repository. You need to get <code>SublimeCodeIntel/<a href="https://github.com/SublimeCodeIntel/CodeIntelSources/" target="_blank">CodeIntelSources</a></code> to run build.sh. More information in <code>SublimeCodeIntel/CodeIntelSources/<a href="https://github.com/SublimeCodeIntel/CodeIntelSources/src" target="_blank">src</a></code>.</li>
-<li>Open an Issue in <a href="https://github.com/SublimeCodeIntel/SublimeCodeIntel/issues" target="_blank">GitHub</a></li>
-</ul>
-<!-- content ends -->
-
-	  </section>
-	</div>
-
-	<!-- FOOTER  -->
-	<div id="footer_wrap" class="outer">
-	  <footer class="inner">
-		<p class="copyright">Ported from Open Komodo by <a href="https://github.com/Kronuz">Germán M. Bravo (Kronuz)</a></p>
-		<p>The plugin is based in code from the Open Komodo Editor and has a MPL license.</p>
-	  </footer>
-	</div>
-
-	<style type="text/css">
-		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-	</style>
-
-	<script type="text/javascript" src="javascripts/main.js?_=1"></script>
-	<script type="text/javascript">
-		set_animation(animation_urls[0], animation_timelines[0], animation_urls[1])
-	</script>
-</body>
-</html>

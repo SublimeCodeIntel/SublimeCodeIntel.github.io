@@ -1,0 +1,13 @@
+- title: Welcome
+  docs:
+    - welcome
+    - quickstart
+    - installation
+    - troubleshooting
+
+- title: Miscellaneous
+  docs:
+    - faq
+    - contributing
+    - conduct
+    - history
