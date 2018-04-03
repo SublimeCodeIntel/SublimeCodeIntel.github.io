@@ -22,7 +22,7 @@ email: german.mb@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A full-featured code intelligence and smart autocomplete engine for Sublime Text
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://www.sublimecodeintel.com
+url: https://www.sublimecodeintel.com
 repository: https://github.com/SublimeCodeIntel/SublimeCodeIntel
 docs_branch: gh_pages
 github_username:  SublimeCodeIntel
