@@ -1,13 +1,14 @@
 - title: Welcome
   docs:
-    - welcome
-    - quickstart
-    - installation
-    - troubleshooting
+    - url: welcome
+    - url: quickstart
+    - url: installation
+    - url: troubleshooting
 
 - title: Miscellaneous
   docs:
-    - faq
-    - contributing
-    - conduct
-    - history
+    - url: faq
+      title: FAQ
+    - url: contributing
+    - url: conduct
+    - url: history
